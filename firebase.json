@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "public": "public",
+    "cleanUrls": true,
+
+    "rewrites": [
+      {
+        "source": "/public/**",
+        "destination": "/**"
+      },
+      {
+        "source": "/game",
+        "destination": "/page/game.html"
+      }
+    ],
+
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
